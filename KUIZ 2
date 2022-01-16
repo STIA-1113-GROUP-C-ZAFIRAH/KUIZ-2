@@ -1,0 +1,48 @@
+package labtest2;
+import java.util.Scanner;
+public class Kuiz2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+         Scanner quiz = new Scanner (System.in);
+		
+		//Question a
+		System.out.println("Enter your salary: RM " );
+		double salary = quiz.nextDouble();
+		System.out.println("Enter year service: ");
+		int year = quiz.nextInt();
+		
+		double bonus = (0.05*salary);
+		
+		if (year > 5)
+			System.out.println("Net bonus amount: RM " + bonus);
+		
+		
+	}
+
+}
+
+
+package labtest2;
+import java.util.Scanner;
+public class Kuiz3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner (System.in);
+				
+	// Question b
+				int highest=Integer.MIN_VALUE;
+				int lowest=Integer.MAX_VALUE;
+
+				Scanner in = new Scanner(System.in);
+
+				System.out.println("Enter any highest or lowert salary ");
+				int n = in.nextInt();
+
+				if(n > highest){
+				    lowest = highest;
+				    highest = n;
+		
